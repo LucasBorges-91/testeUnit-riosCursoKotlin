@@ -14,3 +14,8 @@ fun countXO( str: String ): Boolean {
     }
     return  countO == countX && countO != 0
 }
+
+fun main() {
+    println(countXO("xxoo"))
+    println(countXO("xoo"))
+}
