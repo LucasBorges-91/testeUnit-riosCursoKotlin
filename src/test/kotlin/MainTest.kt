@@ -28,4 +28,16 @@ class MainTest {
     fun vaiFalhar() {
         fail( "nao posso terminar sem esse teste ")
     }
+
+    @Test
+    fun assumption() {
+        //roda os codigos abaixo do assumptions se somente se o resultado do assumptions for true
+        Assumptions.assumeTrue( countXO( "xxoo"))
+        Assertions.assertTrue( abc())
+    }
+
+    @Test
+    fun exception() {
+        assertThrows<NullPointerException> { def() }
+    }
 }
